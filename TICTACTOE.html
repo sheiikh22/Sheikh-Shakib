@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Tic Tac Toe - Best of 3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>⭕TIC TAC TOE ❌</h1>
+  <div class="player-names">
+    <label>
+      Player 1 Name: <input type="text" id="player1" placeholder="Enter Player 1 Name">
+    </label>
+    <br><br>
+    <label>
+      Player 2 Name: <input type="text" id="player2" placeholder="Enter Player 2 Name">
+    </label>
+    <br><br>
+    <button id="startGame" class="btn">Start Game</button>
+  </div>
+
+  <div class="board hidden" id="board">
+    <div class="cell" data-index="0"></div>
+    <div class="cell" data-index="1"></div>
+    <div class="cell" data-index="2"></div>
+    <div class="cell" data-index="3"></div>
+    <div class="cell" data-index="4"></div>
+    <div class="cell" data-index="5"></div>
+    <div class="cell" data-index="6"></div>
+    <div class="cell" data-index="7"></div>
+    <div class="cell" data-index="8"></div>
+  </div>
+
+  <div class="scoreboard hidden" id="scoreboard">
+    <p id="playerTurn"></p>
+    <p>Scores:</p>
+    <p id="scores"></p>
+  </div>
+
+  <div class="winner hidden" id="winner"></div>
+
+  <button class="play-again hidden btn" id="playAgain">Play Again</button>
+
+  <div class="party-blast hidden" id="partyBlast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

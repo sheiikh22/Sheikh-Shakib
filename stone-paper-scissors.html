@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stone Paper Scissors 🤪</title>
+  <link rel="stylesheet" href="stp.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>🪨📄✂️ Stone Paper Scissors</h1>
+    <p id="instruction">Win 3 out of 5 rounds to celebrate! 🎉</p>
+    <div class="choices">
+      <button data-choice="rock">🪨 Rock</button>
+      <button data-choice="paper">📄 Paper</button>
+      <button data-choice="scissors">✂️ Scissors</button>
+    </div>
+    <div class="results">
+      <p id="player-choice">You: 🤔</p>
+      <p id="computer-choice">Computer: 🤔</p>
+      <p id="result"></p>
+    </div>
+    <div class="score">
+      <h2>Score</h2>
+      <p>Wins: <span id="wins">0</span></p>
+      <p>Losses: <span id="losses">0</span></p>
+      <p>Ties: <span id="ties">0</span></p>
+      <p>Rounds Played: <span id="rounds-played">0</span> / 5</p>
+    </div>
+    <button id="play-again" class="hidden">Play Again</button>
+  </div>
+
+  <!-- Celebration Popup -->
+  <div id="celebration-popup" class="hidden">
+    <h1>🎉 You Won 3 Out of 5! 🎉</h1>
+    <p>Congratulations! You're the champion of Stone Paper Scissors! 🏆</p>
+    <button id="restart-game">Play Again</button>
+  </div>
+
+  <script src="stp.js"></script>
+</body>
+</html>

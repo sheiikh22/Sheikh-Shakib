@@ -1,0 +1,123 @@
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background: url('../OneDrive/Desktop/shakib  ka khazana - Copy/MINIONS.jpeg');
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .game-container {
+    margin-top: 10%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  #instruction {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .choices button {
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 15px 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: #ffcc00;
+    color: black;
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  .choices button:hover {
+    transform: scale(1.1);
+    background: #ffaa00;
+  }
+  
+  .results {
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .score {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #play-again {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  #play-again:hover {
+    transform: scale(1.1);
+    background: #1e7e34;
+  }
+  
+  /* Celebration Popup */
+  #celebration-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, #ff7eb3, #ff758c, #ff5c5c);
+    padding: 30px;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    animation: popup-blast 1s ease-out infinite;
+  }
+  
+  @keyframes popup-blast {
+    0%, 100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  }
+  
+  #celebration-popup h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  #restart-game {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #restart-game:hover {
+    background:url(../OneDrive/Desktop/shakib  ka khazana - Copy/MINIONS.jpeg);
+  }
+  
